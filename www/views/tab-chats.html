@@ -1,0 +1,16 @@
+<ion-view title="Chats">
+  <ion-content>
+    <ion-refresher class="refresher_div" pulling-text="" pulling-icon="" spinner="dots" on-refresh="  doRefresh()">
+    </ion-refresher>
+    <div class="list">
+      <div ng-repeat="item in sessionList" ng-click="goChatRoom(item)">
+        <a class="item item-avatar" href="#">
+          <img src="{{item.fromPhoto}}">
+          <h2>{{item.fromNick}}</h2>
+          <p>{{item.lastMsg.text}}.</p>
+          <p style="color:red">未读数:{{item.unread}}</p>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

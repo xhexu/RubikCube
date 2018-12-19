@@ -1,0 +1,26 @@
+{
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\hx\\Desktop\\cordova-plugin-statusbar-master\\cordova-plugin-statusbar-master"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-hot-code-push-plugin": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\hx\\Desktop\\cordova-hot-code-push-master"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-hot-code-push-local-dev-addon": {
+        "source": {
+            "type": "local",
+            "path": "C:\\Users\\hx\\Desktop\\cordova-hot-code-push-local-dev-addon-master"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

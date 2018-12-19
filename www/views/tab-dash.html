@@ -1,0 +1,16 @@
+<ion-view title="测试" hide-nav-bar="true">
+    <ion-content class="padding">
+        <div id="app">
+            <ky-custom-view style="width:100%;" name="BUDGET_MEDICAL_PAYMENT_APPROVAL" ref="formRef" mode="edit" :business-data="businessData">
+                <ky-row slot="footer" style="text-align:center;padding-bottom:10px;">
+                    <ky-button type="primary" @click="onPrint()" v-if="isPrintshow" :disabled="isPrintDisabled">打印</ky-button>
+                    <ky-button type="primary" @click="submitPaymentAppr()" v-if="isSubmitShow" :disabled="isSubmitDisabled">提交</ky-button>
+                    <ky-button type="primary" @click="approveOrBack('approve')" v-if="isApproveShow" :disabled="isApproveDisabled">审批</ky-button>
+                    <ky-button type="primary" @click="approveOrBack('back')" v-if="isBackshow" :disabled="isBackDisabled">驳回</ky-button>
+                    <ky-button type="primary" @click="reset()" v-if="isResetShow" :disabled="isResetDisabled">取消</ky-button>
+                </ky-row>
+            </ky-custom-view>
+        </div>
+
+    </ion-content>
+</ion-view>
